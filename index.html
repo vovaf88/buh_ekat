@@ -17,30 +17,19 @@
       href="/examples/vendors/bootstrap-4/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .container {
-        position: relative;
-        text-align: center;
-        color: rgb(113, 8, 8);
-        
-      }
-
-      .tezis {
-        padding-top: 5%;
-      }
-
       .centered {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
-
+      .left-down {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+      }
       .decor {
         position: relative;
         max-width: 400px;
@@ -136,16 +125,33 @@
         text-align: center;
         padding: 0% 0%;
       }
+      .img-text {
+        position: relative;
+        .img-text {
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          right: 25%;
+        }
+        .img-mail {
+          font-size: 2dvw;
+          position: absolute;
+          bottom: 5px;
+          left: 5px;
+        }
+      }
     </style>
+    <title>Екат</title>
   </head>
 
-  <body style="background-color: #e3e8ee">
+  <body style="background-color: rgb(242, 233, 234)">
     <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #708090"
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: rgb(242, 233, 234)"
     >
-      <div class="container">
-        <a href="" class="navbar-brand"><h4>Моя Бухгалтерия</h4></a>
+      <div class="container mt-3">
+        <img src="lis-money.jpg" alt="" width="100px" />
+        <a href="" class="navbar-brand"><h1>FoxCount</h1></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -178,84 +184,76 @@
       </div>
     </nav>
 
-    <div
-      class="mt-2 border-light"
-      style="
-        min-width: 100%;
-        
-      "
-    >
-          <img
-        src="fon1 copy.jpg"
-        alt="Snow"
-        width="100%"
-      />
-      <div class="centered">
-        <div class="outline">
-          <p style="font-size:3vw; text-shadow: 1px 1px 2px rgb(241, 208, 213);"> <b>Бухгалтерия для бизнеса</b> </p>
-          <p style="font-size:2vw; text-shadow: 1px 1px 2px rgb(241, 208, 213);">Ведение бухгалтерского, налогового и кадрового учета для предпринимателей</p>
+    <div class="mt-3" style="min-width: 100%">
+      <div class="img-text">
+        <img src="lis.jpg" alt="fox" width="100%" />
+        <div class="img-text">
+          <div class="outline">
+            <p
+              style="
+                font-size: 3vw;
+                text-shadow: 1px 1px 2px rgb(242, 233, 234);
+              "
+            >
+              <b>Бухгалтерия для бизнеса</b>
+            </p>
+            <p style="font-size: 2vw; color: rgb(242, 233, 234)">
+              Ведение бухгалтерского, налогового и кадрового учета для
+              предпринимателей
+            </p>
+          </div>
         </div>
+        <div class="img-mail">my-mail@mail.ru</div>
       </div>
     </div>
 
-    <div class="tezis" id="services">
-      <div class="card text-center border-light">
-        
-        <div class="card-body" style="background-color: #e3e8ee">
-          <h5 class="card-title" >Что мы предлагаем?</h5>
-          <p class="card-text">
-            Для получения более подробной информации об услугах свяжитесь с нами по почте или телефону либо закажите обратный звонок
+    <div class="jumbotron text-center mt-5">
+      <h2>Что мы предлагаем?</h2>
+      <p>
+        Для получения более подробной информации об услугах свяжитесь с нами по
+        почте или телефону либо закажите обратный звонок
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-1" align="center">
+          <img src="globe_icon.png" alt="" width="50px" />
+        </div>
+        <div class="col-sm-5">
+          <h3>Бухгалтерское обслуживание</h3>
+          <p>
+            Ведение, постановка и восстановление бухгалтерского и налогового
+            учета
           </p>
         </div>
-      </div>
-    </div>
-
-    <div class="container mt-1 ">
-      <div class="row align-items-start">
-        <div class="col mt-1">
-          <div class="card mx-auto border-light" style="width: 25rem; background-color: #e3e8ee">
-            <div class="card-body text-center"">
-              <h5 class="card-title">Бухгалтерское обслуживание</h5>
-              <p class="card-text">Ведение, постановка и восстановление бухгалтерского и налогового учета
-</p>
-            </div>
-          </div>
+        <div class="col-sm-1" align="center">
+          <img src="globe_icon.png" alt="" width="50px" />
         </div>
-        <div class="col mt-1">
-          <div class="card mx-auto border-light" style="width: 25rem; background-color: #e3e8ee">
-            <div class="card-body">
-              <h5 class="card-title">Нулевая отчетность</h5>
-              <p class="card-text">Составление и сдача нулевой отчетности для ООО и ИП</p>
-            </div>
-          </div>
+        <div class="col-sm-5">
+          <h3>Нулевая отчетность</h3>
+          <p>Составление и сдача нулевой отчетности для ООО и ИП</p>
         </div>
       </div>
-      <div class="row align-items-start">
-        <div class="col mt-1">
-          <div class="card mx-auto border-light" style="width: 25rem; background-color: #e3e8ee">
-            <div class="card-body">
-              <h5 class="card-title">Персонифицированный учет</h5>
-              <p class="card-text">Персонифицированный учет, отчетность по справкам 2-НДФЛ и 6 НДФЛ</p>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-1" align="center">
+          <img src="globe_icon.png" alt="" width="50px" />
         </div>
-        <div class="col mt-1">
-          <div class="card mx-auto border-light" style="width: 25rem; background-color: #e3e8ee">
-            <div class="card-body">
-              <h5 class="card-title">Кадровое делопроизводство</h5>
-              <p class="card-text">Оформление трудовых отношений, ведение и восстановление кадрового учета</p>
-            </div>
-          </div>
+        <div class="col-sm-5">
+          <h3>Персонифицированный учет</h3>
+          <p>
+            Персонифицированный учет, отчетность по справкам 2-НДФЛ и 6 НДФЛ
+          </p>
         </div>
-      </div>
-            <div class="row align-items-start">
-        <div class="col mt-1">
-          <div class="card mx-auto border-light" style="width: 25rem; background-color: #e3e8ee">
-            <div class="card-body">
-              <h5 class="card-title">Дополнительные услуги</h5>
-              <p class="card-text">Расчет заработной платы и больничных, разработка типовой учетной политики</p>
-            </div>
-          </div>
+        <div class="col-sm-1" align="center">
+          <img src="globe_icon.png" alt="" width="50px" />
+        </div>
+        <div class="col-sm-5">
+          <h3>Кадровое делопроизводство</h3>
+          <p>
+            Оформление трудовых отношений, ведение и восстановление кадрового
+            учета
+          </p>
         </div>
       </div>
     </div>
@@ -265,51 +263,41 @@
         class="btn btn-lg"
         href="#contacts"
         role="button "
-        style="background-color: #708090; color:aqua"
+        style="background-color: #d0ac8c; color: rgb(242, 233, 234)"
+        style="background-color: ; color: rgb(191, 198, 205)"
         >Связаться с нами</a
       >
-    </div>
-
-    <div>
-      <div class="text-center mt-1"><h2>Преимущества работы с нами</h2></div>
-      <div class="text-center mt-1">
-        <h4>
-          С нами вы можете быть спокойны по поводу качества и сроков сдачи
-          отчетности
-        </h4>
-      </div>
-      <div>
-        <div class="card text-center mt-1 border-light" style="background-color: #e3e8ee">
-          <div class="card-body">
-            <h5 class="card-title mt-1">Возможность контроля работы онлайн</h5>
-            <p class="card-text mt-1">Вы можете получить доступ ко всей бухгалтерии и отчетности в любое время суток и из любой точки мира
-</p>
-          </div>
-        </div>
-        <div class="card text-center mt-1 border-light" style="background-color: #e3e8ee">
-          <div class="card-body">
-            <h5 class="card-title mt-1">Уменьшение затрат на бухгалтерию</h5>
-            <p class="card-text mt-1">Ведение бухгалтерии на аутсорсе обойдется вам на 30-40 % дешевле, чем содержание штатного или приходящего бухгалтера</p>
-          </div>
-        </div>
-        <div class="card text-center mt-1 border-light" style="background-color: #e3e8ee">
-          <div class="card-body">
-            <h5 class="card-title mt-1">Оптимизация налогов</h5>
-            <p class="card-text mt-1">Мы уделяем серьезное внимание налоговой оптимизации и налоговой безопасности наших клиентов и минимизируем налоговые риски</p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="text-center mt-5" id="price">
       <h2>Тарифы</h2>
       <table class="table table-success">
         <thead>
-          <tr >
-            <th scope="col" style="background-color: #708090; color:aqua">Количество операций</th>
-            <th scope="col" style="background-color: #708090; color:aqua">УСН 6%</th>
-            <th scope="col" style="background-color: #708090; color:aqua">УСН 15%</th>
-            <th scope="col" style="background-color: #708090; color:aqua">ОСНО</th>
+          <tr>
+            <th
+              scope="col"
+              style="background-color: #ebdcd4; color: rgb(113, 8, 8)"
+            >
+              Количество операций
+            </th>
+            <th
+              scope="col"
+              style="background-color: #ebdcd4; color: rgb(113, 8, 8)"
+            >
+              УСН 6%
+            </th>
+            <th
+              scope="col"
+              style="background-color: #ebdcd4; color: rgb(113, 8, 8)"
+            >
+              УСН 15%
+            </th>
+            <th
+              scope="col"
+              style="background-color: #ebdcd4; color: rgb(113, 8, 8)"
+            >
+              ОСНО
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -326,13 +314,13 @@
             <td>5000</td>
           </tr>
           <tr>
-            <td >500</td>
+            <td>500</td>
             <td>3000</td>
             <td>5000</td>
             <td>8000</td>
           </tr>
           <tr>
-            <td >1000</td>
+            <td>1000</td>
             <td>3000</td>
             <td>5000</td>
             <td>10000</td>
@@ -340,83 +328,108 @@
         </tbody>
       </table>
     </div>
-    <div class="card text-center mt-2 border-light" style="background-color: #e3e8ee">
-      <div class="card-body">
-        <h5 class="card-title">Дисклеймер</h5>
-        <p class="card-text">Цены примерные, уточняйте по телефону</p>
-      </div>
+    <div class="text-center mt-5">
+      <img src="globe_icon.png" alt="" width="50px" />
+    </div>
+    <div class="jumbotron text-center">
+      <h2>Преимущества работы с нами</h2>
+      <h5>
+        С нами вы можете быть спокойны по поводу качества и сроков сдачи
+        отчетности
+      </h5>
+    </div>
+    <div class="text-center mt-5">
+      <img src="globe_icon.png" alt="" width="50px" />
+    </div>
+    <div class="jumbotron text-center">
+      <h3>Возможность контроля работы онлайн</h3>
+      <p>
+        Вы можете получить доступ ко всей бухгалтерии и отчетности в любое время
+        суток и из любой точки мира
+      </p>
+    </div>
+    <div class="text-center mt-5">
+      <img src="globe_icon.png" alt="" width="50px" />
+    </div>
+    <div class="jumbotron text-center">
+      <h3>Уменьшение затрат на бухгалтерию</h3>
+      <p>
+        Ведение бухгалтерии на аутсорсе обойдется вам на 30-40 % дешевле, чем
+        содержание штатного или приходящего бухгалтера
+      </p>
+    </div>
+    <div class="text-center mt-5">
+      <img src="globe_icon.png" alt="" width="50px" />
+    </div>
+    <div class="jumbotron text-center">
+      <h3>Оптимизация налогов</h3>
+      <p>
+        Мы уделяем серьезное внимание налоговой оптимизации и налоговой
+        безопасности наших клиентов и минимизируем налоговые риски
+      </p>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-sm-6 mb-3 mb-sm-0">
-        <div class="card text-center mt-1 border-light" style="background-color: #e3e8ee">
-          <div class="card-body">
-            <div style="position: relative; overflow: hidden">
-              <a
-                href="https://yandex.ru/maps/org/diksi/1629534461/?utm_medium=mapframe&utm_source=maps"
-                style="
-                  color: #eee;
-                  font-size: 12px;
-                  position: absolute;
-                  top: 0px;
-                "
-                >Дикси</a
-              ><a
-                href="https://yandex.ru/maps/10752/sergiev-posad/category/supermarket/184108079/?utm_medium=mapframe&utm_source=maps"
-                style="
-                  color: #eee;
-                  font-size: 12px;
-                  position: absolute;
-                  top: 14px;
-                "
-                >Супермаркет в Сергиевом Посаде</a
-              ><a
-                href="https://yandex.ru/maps/10752/sergiev-posad/category/grocery/184108031/?utm_medium=mapframe&utm_source=maps"
-                style="
-                  color: #eee;
-                  font-size: 12px;
-                  position: absolute;
-                  top: 28px;
-                "
-                >Магазин продуктов в Сергиевом Посаде</a
-              ><iframe
-                src="https://yandex.ru/map-widget/v1/?ll=38.118867%2C56.325979&mode=poi&poi%5Bpoint%5D=38.117686%2C56.326233&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1629534461&z=18.38"
-                width="560"
-                height="400"
-                frameborder="1"
-                allowfullscreen="true"
-                style="position: relative"
-              ></iframe>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-6">
+          <div style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.ru/maps/org/diksi/1629534461/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >Дикси</a
+            ><a
+              href="https://yandex.ru/maps/10752/sergiev-posad/category/supermarket/184108079/?utm_medium=mapframe&utm_source=maps"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >Супермаркет в Сергиевом Посаде</a
+            ><a
+              href="https://yandex.ru/maps/10752/sergiev-posad/category/grocery/184108031/?utm_medium=mapframe&utm_source=maps"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 28px;
+              "
+              >Магазин продуктов в Сергиевом Посаде</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/?ll=38.118867%2C56.325979&mode=poi&poi%5Bpoint%5D=38.117686%2C56.326233&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1629534461&z=18.38"
+              width="560"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form class="decor" style="background: #d0ac8c" id="contacts">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+              <h3 style="color: rgb(113, 8, 8)">Написать нам</h3>
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Сообщение..." rows="3"></textarea>
+              <input type="submit" value="Отправить" />
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card text-center mt-1 border-light" style="background-color: #e3e8ee">
-          <div class="card-body">
-            <form class="decor" style="background: #708090" id="contacts">
-              <div class="form-left-decoration"></div>
-              <div class="form-right-decoration"></div>
-              <div class="circle"></div>
-              <div class="form-inner">
-                <h3>Написать нам</h3>
-                <input type="text" placeholder="Username" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Сообщение..." rows="3"></textarea>
-                <input type="submit" value="Отправить" />
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer mt-5">
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style="background-color: #708090"
-      ><span style="margin-left: 10px; color: #e9eff6;">Наш телефон +7-999-999-99-99 и даже есть почта!</span>
-        
+        style="background-color: #d0ac8c"
+      >
+        <span style="margin-left: 10px; color: rgb(113, 8, 8)"
+          >Наш телефон +7-999-999-99-99 и даже есть почта!</span
+        >
       </nav>
     </div>
 
